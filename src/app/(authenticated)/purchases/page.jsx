@@ -68,7 +68,7 @@ export default function PurchasesPage() {
             Yup.object().shape({
                 productId: Yup.string().required("Product is required"),
                 quantity: Yup.number().min(1, "Minimum 1").required("Quantity is required"),
-                unitPrice: Yup.number().min(0, "Invalid price").required("Price is required")
+                unitPrice: Yup.number().min(1, "Invalid price").required("Price is required")
             })
         ).min(1, "At least one item is required")
     });

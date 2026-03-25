@@ -93,13 +93,13 @@ function EmptyState({ onAdd }) {
             <p className="text-sm text-gray-400 max-w-xs mb-6">
                 Start by adding your first product to the catalog. It will appear here as a card.
             </p>
-            <Button
+            {/* <Button
                 variant="primary"
                 className="!rounded-xl"
                 onClick={onAdd}
                 startIcon={<Plus className="w-4 h-4 text-white" />}
                 label="Add First Product"
-            />
+            /> */}
         </div>
     );
 }
