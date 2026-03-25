@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+:root {
+  /* ================= BASE COLORS (Single source) ================= */
+  --color-brand-primary: #2563EB;
+  --color-brand-primary-hover: #2563EB1A;
+
+  --color-success: #16a34a;
+  --color-success-hover: #15803d;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #374151;
+
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+
+  --color-white: #ffffff;
+  --color-bg: #f9fafb;
+  --color-bg-alt: #f3f4f6;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text-tertiary: #6b7280;
+
+  /* ================= BUTTON ================= */
+  --color-primary-button: var(--color-brand-primary);
+  --color-primary-button-hover: var(--color-brand-primary-hover);
+
+  --color-success-button: var(--color-success);
+  --color-success-button-hover: var(--color-success-hover);
+
+  --color-danger-button: var(--color-danger);
+  --color-danger-button-hover: var(--color-danger-hover);
+
+  --color-outline-button: var(--color-brand-primary);
+  --color-outline-button-bg-hover: #eff6ff;
+
+  /* ================= INPUT / SELECT ================= */
+  --input-border: var(--color-gray-300);
+  --input-border-focus: var(--color-brand-primary);
+  --input-border-error: var(--color-danger);
+
+  --input-label: var(--color-text-secondary);
+  --input-label-error: var(--color-danger);
+
+  --input-bg: var(--color-white);
+  --input-text: var(--color-text-primary);
+  --input-placeholder: var(--color-gray-400);
+  --input-disabled-bg: var(--color-gray-100);
+
+  --input-icon: var(--color-gray-500);
+  --input-icon-disabled: var(--color-gray-400);
+
+  --input-divider: var(--color-gray-300);
+  --input-divider-disabled: var(--color-gray-300);
+
+  /* ================= SELECT OPTIONS ================= */
+  --option-hover-bg: #e0f2ff;
+  --option-selected-bg: #bfdbfe;
+  --option-text: var(--color-text-primary);
+  --option-text-selected: var(--color-text-primary);
+
+  /* ================= CHECKBOX / RADIO ================= */
+  --color-primary: #111111;
+
+  /* ================= CHIP STATUS ================= */
+  --chip-pending-bg: #fef3c7;
+  --chip-pending-text: #b45309;
+
+  --chip-success-bg: #dcfce7;
+  --chip-success-text: var(--color-success-hover);
+
+  --chip-warning-bg: #fef3c7;
+  --chip-warning-text: #b45309;
+
+  --chip-error-bg: #fee2e2;
+  --chip-error-text: var(--color-danger-hover);
+
+  --chip-active-bg: #e0f2fe;
+  --chip-active-text: #0369a1;
+
+  --chip-inactive-bg: var(--color-gray-100);
+  --chip-inactive-text: var(--color-gray-500);
+
+  /* ================= MODAL ================= */
+  --modal-bg: var(--color-white);
+  --modal-backdrop: rgba(0, 0, 0, 0.5);
+
+  --modal-header-text: var(--color-text-primary);
+  --modal-header-border: var(--color-gray-200);
+
+  --modal-close-icon: var(--color-gray-500);
+  --modal-close-icon-hover: var(--color-text-primary);
+  --modal-close-bg: var(--color-gray-100);
+  --modal-close-bg-hover: var(--color-gray-200);
+
+  --modal-body-text: var(--color-text-primary);
+  --modal-body-bg: var(--color-white);
+
+  --modal-footer-bg: #f9fafb;
+  --modal-footer-border: var(--color-gray-200);
+
+  /* ================= AVATAR ================= */
+  --avatar-bg: var(--color-gray-200);
+  --avatar-text: var(--color-text-secondary);
+  --avatar-border: var(--color-white);
+  --avatar-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --avatar-radius-circle: 100%;
+  --avatar-radius-square: 8px;
+
+  /* ================= FILE UPLOADER ================= */
+  --uploader-border: var(--color-gray-300);
+  --uploader-border-hover: var(--color-brand-primary);
+  --uploader-bg: #f9fafb;
+  --uploader-bg-hover: #f0f7ff;
+  --uploader-text: var(--color-text-secondary);
+  --uploader-icon: var(--color-gray-400);
+
+  /* ================= TOOLTIP ================= */
+  --tooltip-bg: var(--color-text-primary);
+  --tooltip-text: var(--color-white);
+  --tooltip-radius: 6px;
+  --tooltip-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  /* ================= TABLE ================= */
+  --table-header-bg: var(--color-gray-100);
+  --table-header-text: var(--color-text-secondary);
+  --table-row-hover: #f9fafb;
+  --table-border: var(--color-gray-200);
+  --table-radius: 12px;
+
+  /* ================= TABS ================= */
+  --tabs-bg: var(--color-gray-100);
+  --tabs-trigger-text: var(--color-gray-500);
+  --tabs-trigger-active-text: var(--color-text-primary);
+  --tabs-indicator-bg: var(--color-white);
+  --tabs-border: var(--color-gray-200);
+
+  /* ================= DATEPICKER ================= */
+  --datepicker-bg: var(--color-white);
+  --datepicker-border: var(--color-gray-200);
+  --datepicker-selected-bg: var(--color-brand-primary);
+  --datepicker-selected-text: var(--color-white);
+  --datepicker-hover-bg: var(--color-gray-100);
+  --datepicker-muted-text: var(--color-gray-400);
+
+  /* ================= SPINNER ================= */
+  --color-spinner-primary: var(--color-brand-primary);
+  --color-spinner-success: var(--color-success);
+  --color-spinner-danger: var(--color-danger);
+}
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: var(--font-sora);
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+
+  border-radius: 10px;
+  border: 2px solid var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.9);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-300) var(--color-gray-100);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
